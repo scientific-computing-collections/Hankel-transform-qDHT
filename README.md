@@ -1,4 +1,4 @@
-# quasi Hankel Transform  
+# Quais-discrete Hankel Transform  
 
 python3 algorithm that perform zero-order Hankel Transform for an 1D array (float or real valued). 
 Such QDHT algorithm is especially suit for iterative codes, where energy-preserving is important -- as discrete form of Parseval theorem is  guaranteed.
