@@ -34,7 +34,7 @@ plt.show()
 
 ### example
 qDHT close to the precise of machine error: 
-![compare with the direct-sum result](qDHT-compare-with-direct-sum.png.png)
+![compare with the direct-sum result](https://github.com/scientific-computing-collections/Hankel-transform-qDHT/blob/main/qDHT-compare-with-direct-sum.png)
 
 ### requiremets 
 
