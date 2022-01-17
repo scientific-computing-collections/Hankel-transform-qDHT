@@ -46,7 +46,7 @@ class Hankel_qDHT:
         self.F_multiplier_inv = 1.0 / self.F_multiplier
         
         # 1 / |J_1(n)*J_1(m)|: 
-        J1_inv_mesh_x, J1_inv_mesh_y = np.meshgrid(self.j1_inv[0:-1]*(2.0/self._S), self.j1_inv[0:-1])  
+        #J1_inv_mesh_x, J1_inv_mesh_y = np.meshgrid(self.j1_inv[0:-1]*(2.0/self._S), self.j1_inv[0:-1])  
         #self.Cmn =  J1_inv_mesh_x * J1_inv_mesh_y * j0(np.outer(self.js[0:-1], self.js[0:-1]/self._S) ) # 
         self.Cmn =  np.outer(self.j1_inv[0:-1]*(2.0/self._S), self.j1_inv[0:-1]) * j0(np.outer(self.js[0:-1], self.js[0:-1]/self._S) ) # 
 
@@ -122,6 +122,6 @@ if __name__ == "__main__":
     # Timming: 
     t1 = lambda : ht.transform(field(ht.r))  
     t2 = lambda :  np.matmul(c2, c1*field(rho))  
-    timming(t1, 20, name="qDHT") 
-    timming(t2, 20, name="sum") 
+    timming(t1, 1, name="qDHT") 
+    timming(t2, 1, name="sum") 
 

@@ -32,6 +32,10 @@ plt.ylabel("abs. field")
 plt.show() 
 ```
 
+## performance
+
+ 78ms each transform for 1*4096 complex-valued array. 
+
 ### example
 qDHT close to the precise of machine error: 
 ![compare with the direct-sum result](https://github.com/scientific-computing-collections/Hankel-transform-qDHT/blob/main/qDHT-compare-with-direct-sum.png)
